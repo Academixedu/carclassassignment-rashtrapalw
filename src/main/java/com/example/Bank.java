@@ -9,6 +9,7 @@ public class Bank {
     private double balance;
 
     // Add a constructor here
+    
     // public Bank(String bankName, String accountHolderName, String accountNumber, double balance) { ... }
 
     // Add getter and setter methods here
@@ -24,6 +25,45 @@ public class Bank {
     // Method to display account details
     public void displayAccountDetails() {
         // TODO: Implement this method
+    }
+
+    public void setBankName(String bankName) {
+        this.bankName = bankName;
+    }
+
+    public void setAccountHolderName(String accountHolderName) {
+        this.accountHolderName = accountHolderName;
+    }
+
+    public void setAccountNumber(String accountNumber) {
+        this.accountNumber = accountNumber;
+    }
+
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
+
+    public String getBankName() {
+        return bankName;
+    }
+
+    public String getAccountHolderName() {
+        return accountHolderName;
+    }
+
+    public String getAccountNumber() {
+        return accountNumber;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public Bank(String bankName, String accountHolderName, String accountNumber, double balance) {
+        this.bankName = bankName;
+        this.accountHolderName = accountHolderName;
+        this.accountNumber = accountNumber;
+        this.balance = balance;
     }
 
     // Method to deposit money
